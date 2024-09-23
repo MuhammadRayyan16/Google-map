@@ -3,6 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
+
 const Map = () => {
     const [region, setRegion] = useState({
         latitude: 37.78825,
@@ -11,6 +12,7 @@ const Map = () => {
         longitudeDelta: 0.0421,
     });
 
+    
     const handleSearch = (data, details) => {
         const newRegion = {
             latitude: details.geometry.location.lat,
